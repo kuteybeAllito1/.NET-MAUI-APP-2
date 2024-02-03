@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gorsel_Final.Sehir_Hava_Durumu"
+             Title="Sehir Hava Durumu">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem IconImageSource="add.png" Order="Primary" Clicked="EkleClicked"/>
+        <ToolbarItem IconImageSource="update.png" Order="Primary" Clicked="YukleClicked"/>
+    </ContentPage.ToolbarItems>
+
+    <RefreshView RefreshColor="Blue" Refreshing="YukleClicked" x:Name="refreshView">
+
+        <CollectionView x:Name="listCity" VerticalOptions="FillAndExpand">
+            <CollectionView.ItemTemplate>
+                <DataTemplate>
+                    <StackLayout Margin="10" Spacing="10">
+                        <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*, Auto">
+                            <Label Grid.Row="0" Grid.Column="0" Text="{Binding Name}" FontSize="Title" VerticalOptions="Center"/>
+                            <ImageButton Grid.Row="0" Grid.Column="1" Source="remove.png" WidthRequest="20" HeightRequest="20" CommandParameter="{Binding Name}" Clicked="silclicked"/>
+                        </Grid>
+
+                        <Image Source="{Binding Source}" Aspect="AspectFit" HeightRequest="200" Margin="0,10,0,0"/>
+                    </StackLayout>
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <CollectionView.ItemsLayout>
+                <LinearItemsLayout Orientation="Vertical" ItemSpacing="15"/>
+            </CollectionView.ItemsLayout>
+        </CollectionView>
+    </RefreshView>
+</ContentPage>

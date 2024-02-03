@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Gorsel_Final.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Gorsel_Final"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.TabBarIsVisible="False">
+    
+
+    <FlyoutItem Title="Ana Sayfa" FlyoutDisplayOptions="AsMultipleItems">
+
+        <ShellContent
+        Icon="main.png"
+        Title="Ana Sayfa"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent 
+        Icon="doviz.png"
+        Title="Doviz Kurlar"
+        ContentTemplate="{DataTemplate local:Doviz_Kurlar}"
+        Route="Doviz_Kurlar" />
+
+        <ShellContent
+        Icon="notes.png"
+        Title="Yapılacaklar Listesi"
+        ContentTemplate="{DataTemplate local:Yapilacaklar}"
+        Route="YapilacakListe"/>
+
+        <ShellContent
+        Icon="haberler.png"
+        Title="Haberler"
+        ContentTemplate="{DataTemplate local:haber_liste}"
+        Route="Haberler"
+            />
+
+        <ShellContent
+        Icon="havadurumu.png"
+        Title="Sehir Hava Durumu"
+        ContentTemplate="{DataTemplate local:Sehir_Hava_Durumu}"
+        Route="Sehir Hava Durumu" />
+
+        <ShellContent
+        Icon="setting.png"
+        Title="Ayarlar"
+        ContentTemplate="{DataTemplate local:Ayarlar}"
+        Route="Ayarlar"
+            />
+    </FlyoutItem>
+
+
+</Shell>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gorsel_Final.Doviz_Kurlar"
+             Title="Doviz Kurlar">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label" x:Key="Basliklar">
+            <Setter Property="TextColor" Value="Orange" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="18" />
+        </Style>
+    </ContentPage.Resources>
+
+    <StackLayout>
+        <Grid RowDefinitions="Auto" ColumnDefinitions="*,Auto">
+            <Label Text="Güncel Döviz Kurları" Style="{StaticResource Basliklar}" HorizontalOptions="Start" Margin="20" Grid.Column="0"/>
+            <ImageButton Source="update.png" Clicked="Guncelleme" HorizontalOptions="End" WidthRequest="20" HeightRequest="20" Grid.Column="1"/>
+        </Grid>
+
+        <ListView x:Name="dovizliste" SelectionMode="None" BackgroundColor="#111111" >
+            <ListView.Header>
+                <Grid  HorizontalOptions="FillAndExpand">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Adı" Style="{StaticResource Basliklar}" HorizontalOptions="FillAndExpand" Grid.Column="0" />
+                    <Label Text="Alış" Style="{StaticResource Basliklar}" HorizontalOptions="FillAndExpand" Grid.Column="1" />
+                    <Label Text="Satış" Style="{StaticResource Basliklar}" HorizontalOptions="FillAndExpand" Grid.Column="2" />
+                    <Label Text="Fark" Style="{StaticResource Basliklar}" HorizontalOptions="FillAndExpand" Grid.Column="3" />
+                    <Label Text="Yön" Style="{StaticResource Basliklar}" HorizontalOptions="FillAndExpand" Grid.Column="4" Margin="90,0,0,0" />
+                </Grid>
+            </ListView.Header>
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Margin="20,5,20,5" HorizontalOptions="FillAndExpand">
+                            <Label Text="{Binding Name}" TextColor="OrangeRed" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="{Binding AlisFiat}" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="{Binding SatisFiat}" HorizontalOptions="FillAndExpand"/>
+                            <Label Text="{Binding Farklar}" HorizontalOptions="FillAndExpand"/>
+                            <Image Source="{Binding Yon}" HorizontalOptions="FillAndExpand" HeightRequest="15"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>

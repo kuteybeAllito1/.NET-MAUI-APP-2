@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gorsel_Final.Yapilacaklar"
+             Title="Yapilacaklar">
+
+    <ScrollView>
+        <RefreshView>
+            <StackLayout Margin="30">
+                <Button x:Name="AddMethod" Text="Görev Ekle" Clicked="YeniGorev" Scale="0.8" Margin="0,0,0,20"/>
+
+                <CollectionView x:Name="todos">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid ColumnDefinitions="*,Auto">
+                                <StackLayout Margin="10">
+                                    <Label Text="{Binding Head}" Margin="0,0,0,5"/>
+                                    <Label Text="{Binding Detail}" Margin="0,0,0,5"/>
+                                    <Label Text="{Binding Date}" Margin="0,0,0,5"/>
+                                    <Label Text="{Binding Hour}" Margin="0,0,0,5"/>
+                                </StackLayout>
+
+                                <Grid RowSpacing="10" Grid.Column="1" RowDefinitions="Auto,Auto" Margin="10">
+                                    <ImageButton x:Name="Delete" Grid.Row="0" Margin="0,0,0,5" Clicked="Delete" Source="remove.png" WidthRequest="20" HeightRequest="20"  />
+                                    <ImageButton Grid.Row="1" Margin="0,0,0,5" Clicked="GorevGuncelle" CommandParameter="{Binding ID}" Source="update.png" WidthRequest="20" HeightRequest="20" />
+                                </Grid>
+                            </Grid>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </StackLayout>
+        </RefreshView>
+    </ScrollView>
+</ContentPage>

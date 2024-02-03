@@ -1,0 +1,89 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = 
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net7.0-maccatalyst
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Gorsel_Final
+build_property.ProjectDir = C:\Users\husey\OneDrive - Bartın Üniversitesi\Masaüstü\uzaktan ders\.NET-MAUI-APP-2\MAUI-APP2\Gorsel_Final\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Ayarlar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Ayarlar.xaml
+build_metadata.AdditionalFiles.TargetPath = Ayarlar.xaml
+build_metadata.AdditionalFiles.RelativePath = Ayarlar.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Doviz_Kurlar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Doviz_Kurlar.xaml
+build_metadata.AdditionalFiles.TargetPath = Doviz_Kurlar.xaml
+build_metadata.AdditionalFiles.RelativePath = Doviz_Kurlar.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/haberlerDetails.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.haberlerDetails.xaml
+build_metadata.AdditionalFiles.TargetPath = haberlerDetails.xaml
+build_metadata.AdditionalFiles.RelativePath = haberlerDetails.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/haber_liste.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.haber_liste.xaml
+build_metadata.AdditionalFiles.TargetPath = haber_liste.xaml
+build_metadata.AdditionalFiles.RelativePath = haber_liste.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Planlama.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Planlama.xaml
+build_metadata.AdditionalFiles.TargetPath = Planlama.xaml
+build_metadata.AdditionalFiles.RelativePath = Planlama.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Sehir_Hava_Durumu.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Sehir_Hava_Durumu.xaml
+build_metadata.AdditionalFiles.TargetPath = Sehir_Hava_Durumu.xaml
+build_metadata.AdditionalFiles.RelativePath = Sehir_Hava_Durumu.xaml
+
+[C:/Users/husey/OneDrive - Bartın Üniversitesi/Masaüstü/uzaktan ders/.NET-MAUI-APP-2/MAUI-APP2/Gorsel_Final/Yapilacaklar.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Gorsel_Final.Yapilacaklar.xaml
+build_metadata.AdditionalFiles.TargetPath = Yapilacaklar.xaml
+build_metadata.AdditionalFiles.RelativePath = Yapilacaklar.xaml

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gorsel_Final.Planlama">
+
+    <ScrollView BackgroundColor="#EFEFEF">
+        <VerticalStackLayout Padding="20">
+            <Label Text="Notlar"
+                   FontSize="30"
+                   TextColor="#3498DB"
+                   HorizontalOptions="Start"/>
+
+            <Frame BackgroundColor="#3498DB" CornerRadius="10">
+                <VerticalStackLayout Spacing="25">
+                    <Label FontSize="Small" Text="Not başlığı :" TextColor="White"/>
+                    <Entry x:Name="Bas"
+                           Placeholder="Not başlığı buraya yazınız.."
+                           FontSize="Medium"
+                           Text=""
+                           TextColor="Black" BackgroundColor="#F2F2F2" />
+
+                    <Label FontSize="Small" Text="Not :" TextColor="White"/>
+                    <Editor x:Name="Detay"
+                            Text=""
+                            Placeholder="Notunuz buraya yaziniz.."
+                            FontSize="Medium"
+                            TextColor="Black" BackgroundColor="#F2F2F2" HeightRequest="100"/>
+
+                    <Label FontSize="Small" Text="Tarih:" TextColor="White"/>
+                    <DatePicker x:Name="Tarih" TextColor="Black" BackgroundColor="#F2F2F2"/>
+
+                    <Label FontSize="Small" Text="Saat:" TextColor="White"/>
+                    <TimePicker x:Name="Saat" TextColor="Black" BackgroundColor="#F2F2F2"/>
+
+                    <Button Clicked="Save" Text="Not Ekle" BackgroundColor="#FF6347" TextColor="White" FontSize="Medium"/>
+
+                    <Button Clicked="GoBack_Clicked" Text="Geri" BackgroundColor="#FF6347" TextColor="White" FontSize="Medium"/>
+                </VerticalStackLayout>
+            </Frame>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

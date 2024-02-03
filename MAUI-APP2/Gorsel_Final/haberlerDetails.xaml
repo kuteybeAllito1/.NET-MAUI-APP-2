@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Gorsel_Final.haberlerDetails"
+             Title="HaberlerDetails">
+
+
+
+    
+
+
+            <Grid >
+                <WebView x:Name="webView" Source="{Binding haber.link}" />
+                <StackLayout VerticalOptions="Start" HorizontalOptions="End">
+                    <ImageButton Source="return.png" Clicked="OnBackToNewsClicked"  HeightRequest="50" WidthRequest="50" />
+                </StackLayout>
+
+             </Grid>
+        
+
+
+
+    
+
+
+
+</ContentPage>
